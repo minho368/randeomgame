@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://coffe-lotto2-minho368.c9users.io/lotto/clickview">
+        <img alt="Lotto" src="/lottologo.jpg">
+      </a>
+    </div>
+  </div>
+</nav>
+<div class=container>
+<p class=”bg-info“>
+<h4><%=@drw_numbers %> 이고, 보너스번호는 <%=@bonus_number %></h4>
+
+<h4>추첨한 로또 번호는  
+<%= image_tag @my_numbers[0] %>
+<%= image_tag @my_numbers[1] %>
+<%= image_tag @my_numbers[2] %>
+<%= image_tag @my_numbers[3] %>
+<%= image_tag @my_numbers[4] %>
+<%= image_tag @my_numbers[5] %>
+보너스번호<%= image_tag @my_numbers[6] %> </h4>
+
+<h4>겹치는 번호는 <%=@match_numbers %>입니다.</h4>
+
+<h4>결과는 <%=@result%></h4> 
+</p>
+<br><br>
+<INPUT TYPE="button" onClick="history.go(0)" VALUE="새로운 번호뽑기">
+</div>
+
+<nav>
+  <ul class="pager">
+    <li><a href="https://coffe-lotto2-minho368.c9users.io/lotto/clickview">Previous</a></li>
+    <li><a href="https://coffe-lotto2-minho368.c9users.io/lotto/shownum">Next</a></li>
+  </ul>
+</nav>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<style>
+body{
+  background : url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUUExMWFhUWGBkbGBgYGBhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12-JlCn98_N6L_RnZ6n7q1OFdFASaVRXJEjyXxedvG_2Gag88yg/B/9k=') no-repeat center
+  center : fixed;
+  background-size : cover;
+}
+  .container{
+    background-color : #D9E5FF;
+  } 
+  .jumbotron{
+    background-color : #D9E5FF;
+    
+  }
+  .table{
+  }
+  }
+</style>
+<%= yield %>
+
+</body>
+</html>
